@@ -1,0 +1,23 @@
+
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;  
+
+  .firstNav{
+
+  }
+  .secondNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
