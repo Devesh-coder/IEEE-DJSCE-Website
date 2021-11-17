@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import cx from "classnames"
 import styles from "./Nav.module.scss"
-import IEEELogoImg from "../../../images/IEEELogo.svg"
+import { Context } from '../../ContextData'
 
 
 
 const Nav = () => {
+
+  const [baseData] = useContext(Context);
+  const IEEELogoImg = baseData.navLogo;
+
+  const navElements = [
+    { title: "About Us", linkTo: "aboutUs", className: "" },
+    { title: "Sponsors", linkTo: "sponsors", className: "" },
+    { title: "Events", linkTo: "events", className: "" },
+  ]
+
   return (
     <nav className={styles.nav}>
       <div className={cx(styles.firstNav)}>
@@ -15,9 +25,13 @@ const Nav = () => {
         </Link>
       </div>
       <div className={cx(styles.secondNav)}>
-        <Link to={'/aboutUs'}>About Us</Link>
-        <Link to={'/sponsors'}>Our Sponsors</Link>
-        <Link to={'/events'}>Events</Link>
+        {
+          navElements.map((element, key) => (
+            <Link to={`/${element.linkTo}`} key={key} className={cx(element.className)}>
+              {element.title}
+            </Link>
+          ))
+        }
       </div>
     </nav>
   )
