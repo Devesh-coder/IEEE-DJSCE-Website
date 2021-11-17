@@ -15,15 +15,20 @@ const Nav = () => {
     { title: "About Us", linkTo: "aboutUs", className: "" },
     { title: "Sponsors", linkTo: "sponsors", className: "" },
     { title: "Events", linkTo: "events", className: "" },
+    { title: "Our Team", linkTo: "teams", className: "" },
   ]
 
   return (
     <nav className={styles.nav}>
+
+
       <div className={cx(styles.firstNav)}>
         <Link to={'/'} className={styles.navLogo}>
           <img src={IEEELogoImg} alt="" />
         </Link>
       </div>
+
+
       <div className={cx(styles.secondNav)}>
         {
           navElements.map((element, key) => (
