@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Nav from '../CommonComp/Nav/Nav'
+import { Context } from '../ContextData';
 import styles from "./Home.module.scss"
 
 const Home = () => {
 
+  const [baseData] = useContext(Context);
+
   document.body.style.backgroundColor = "black";
 
   return (
-    <div>
+    <div className={styles.home}>
       <Nav />
-      Home
+      <h1>{baseData.name} Home</h1>
     </div>
   )
 }
