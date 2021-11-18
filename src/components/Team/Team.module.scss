@@ -13,11 +13,18 @@
             height: 10rem;
             font-size: xx-large;
         }
-        .teams__profile{
+
+        .teams_tiles{
             display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin-top: 1.5rem;
+            flex-direction: column;
+            gap: 3rem;
+
+            .teams__profile{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 1.5rem;
+            }
         }
     }
 }
