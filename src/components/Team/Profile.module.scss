@@ -1,0 +1,28 @@
+
+
+.profile{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+
+    .profile__background{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        width: 10rem;
+        background-color: gray;
+        border-radius: 15%;
+
+        img{
+             
+            width: 9rem;
+            height: 9rem;
+        }
+    }
+    .profile__name{
+        font-weight: bold;
+    }
+}
