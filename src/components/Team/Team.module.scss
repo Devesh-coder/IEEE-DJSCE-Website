@@ -1,17 +1,15 @@
 
 
-.teams{
-    background-color: brown;
+.teams{    
     height: 150rem;
 
-    .teams__body{
-        background-color: red;
+    .teams__body{        
+        color: white;
         
         .teams__title{
             display: flex;
             justify-content: center;
-            align-items: center;
-            background-color: blue;
+            align-items: center;            
             height: 10rem;
             font-size: xx-large;
         }
