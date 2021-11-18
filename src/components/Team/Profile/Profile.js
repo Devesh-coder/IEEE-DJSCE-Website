@@ -7,8 +7,8 @@ function Profile({ name, title, img }) {
             <div className={styles.profile__background}>
                 <img src={img} alt=""></img>
             </div>
-            <div className={styles.profile__name}>{name}</div>
-            <div className={styles.profile__title}>{title}</div>
+            <h3 className={styles.profile__name}>{name}</h3>
+            <h5 className={styles.profile__title}>{title}</h5>
         </div>
     )
 }
