@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import useScrollStatus from '../../hooks/useScrollStatus';
 
 const ProgressBar = () => {
@@ -15,7 +15,7 @@ const ProgressBar = () => {
   return (
     <div>
       <div className='progressBar'>
-        <div style={{ ...style, width: `${scrollPosition == 0 ? scrollPosition : scrollPosition + 0.9}%` }}></div>
+        <div style={{ ...style, width: `${scrollPosition === 0 ? scrollPosition : scrollPosition + 0.9}%` }}></div>
       </div>
     </div>
   )

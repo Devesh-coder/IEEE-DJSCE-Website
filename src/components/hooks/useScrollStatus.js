@@ -32,7 +32,7 @@ const useScrollStatus = () => {
 
   useEffect(() => {
     listenToScrollEvent();
-  }, [scrollPosition])
+  })
 
   return scrollPosition;
 }
