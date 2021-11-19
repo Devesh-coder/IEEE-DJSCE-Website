@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import Nav from '../CommonComp/Nav/Nav'
 import { Context } from '../ContextData';
+import Banner from './Banner/Banner';
 import styles from "./Home.module.scss"
 
 const Home = () => {
@@ -11,8 +12,11 @@ const Home = () => {
 
   return (
     <div className={styles.home}>
-      <Nav />
-      <h1>{baseData.name} Home</h1>
+      <div className={styles.homeNav}>
+        <Nav />
+      </div>
+      <Banner />
+      {/* <h1>{baseData.name} Home</h1> */}
     </div>
   )
 }
