@@ -4,7 +4,7 @@ import styles from "./OurEvents.module.scss";
 const OurEvents = () => {
   return (
     <div className={styles.ourEvents}>
-      <p>Events</p>
+      <h1 className={styles.eventHeading}>Events</h1>
       <div>
         <button>2017</button>
         <button>2018</button>
