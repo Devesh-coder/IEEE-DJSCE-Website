@@ -1,10 +1,9 @@
 .Events{
-    // display: flex;
     color: white;
     text-align: center;
-    font-family: Montserrat;
-    font-weight: 800;
-    font-size: 72px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 350;
+    font-size: 4.2rem;
     font-style: capitalize;
     justify-content: space-between;
     letter-spacing: 0.05em;
@@ -13,19 +12,13 @@
     button{
         border: none;
         color:white;
-        margin: 1em 0.5em;
+        margin: 2em 0.5em;
         width: 166px;
         height: 52px;
-        font-family: Montserrat;
-        font-style: normal;
         font-weight: bold;
         font-size: 27px;
-        line-height: 33px;
-        /* or 124% */
-        align-items: center;
-
-        background: rgba(255, 255, 255, 0.1);
-        /* Note: backdrop-filter has minimal browser support */
+        line-height: 124%;
+        background: rgba(255, 255, 255, 0.1);       
 
         border-radius: 20px;
     }  
@@ -33,10 +26,4 @@
     button:hover{
         background: #00F0FF99;
     }
-  
-    //   a{
-    //     text-decoration: none;
-    //     color: white;
-    //   }
-    // }
-  }
+}
