@@ -15,10 +15,12 @@ const Home = () => {
       <div className={styles.homeNav}>
         <Nav />
       </div>
-      <Banner />
-      <OurVision />
-      <OurEvents />
-      <Footer />
+      <div className={styles.flexDiv}>
+        <Banner />
+        <OurVision />
+        <OurEvents />
+        <Footer />
+      </div>
     </div>
   )
 }
