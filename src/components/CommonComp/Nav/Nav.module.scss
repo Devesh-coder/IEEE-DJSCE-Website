@@ -1,20 +1,45 @@
 
+  .nav_dark {
+    background-color: #2D1F6A;
+  }
 
-.nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px;  
+.navDiv{
+  position: sticky;
+  top: 0;
+  width: 100%;
 
-  .secondNav{
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+
+
+  .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    padding: 10px 30px; 
+    padding-top: 30px;
 
-    a{
-      text-decoration: none;
-      color: white;
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+  
+    .secondNav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3rem;
+      
+      .navElement{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      .navEvents{
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 30px;
+      }      
     }
   }
 }
