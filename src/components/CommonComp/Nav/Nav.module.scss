@@ -1,15 +1,23 @@
 
+  .nav_dark {
+    background-color: #2D1F6A;
+  }
 
 .navDiv{
   position: sticky;
   top: 0;
   width: 100%;
 
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+
+
   .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px; 
+    padding-top: 30px;
 
     font-family: Roboto;
     font-weight: 400;
