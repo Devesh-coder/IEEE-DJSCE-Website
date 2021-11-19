@@ -10,17 +10,28 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px; 
+
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
   
     .secondNav{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
-  
-      a{
+      gap: 3rem;
+      
+      .navElement{
         text-decoration: none;
         color: white;
+        text-transform: uppercase;
       }
+
+      .navEvents{
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 30px;
+      }      
     }
   }
 }
