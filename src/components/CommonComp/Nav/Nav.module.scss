@@ -1,20 +1,26 @@
 
 
-.nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px;  
+.navDiv{
+  position: sticky;
+  top: 0;
+  width: 100%;
 
-  .secondNav{
+  .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-
-    a{
-      text-decoration: none;
-      color: white;
+    padding: 10px 30px; 
+  
+    .secondNav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+  
+      a{
+        text-decoration: none;
+        color: white;
+      }
     }
   }
 }

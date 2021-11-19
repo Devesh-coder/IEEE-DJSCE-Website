@@ -19,26 +19,29 @@ const Nav = () => {
   ]
 
   return (
-    <nav className={styles.nav}>
+    <div className={styles.navDiv}>
+
+      <nav className={styles.nav}>
 
 
-      <div className={cx(styles.firstNav)}>
-        <Link to={'/'} className={styles.navLogo}>
-          <img src={IEEELogoImg} alt="" />
-        </Link>
-      </div>
+        <div className={cx(styles.firstNav)}>
+          <Link to={'/'} className={styles.navLogo}>
+            <img src={IEEELogoImg} alt="" />
+          </Link>
+        </div>
 
 
-      <div className={cx(styles.secondNav)}>
-        {
-          navElements.map((element, key) => (
-            <Link to={`/${element.linkTo}`} key={key} className={cx(element.className)}>
-              {element.title}
-            </Link>
-          ))
-        }
-      </div>
-    </nav>
+        <div className={cx(styles.secondNav)}>
+          {
+            navElements.map((element, key) => (
+              <Link to={`/${element.linkTo}`} key={key} className={cx(element.className)}>
+                {element.title}
+              </Link>
+            ))
+          }
+        </div>
+      </nav>
+    </div>
   )
 }
 
