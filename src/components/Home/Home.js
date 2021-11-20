@@ -6,6 +6,7 @@ import Blogs from './Blogs/Blogs';
 import styles from "./Home.module.scss"
 import OurEvents from './OurEvents/OurEvents';
 import OurVision from './OurVision/OurVision';
+import UpcomingEvent from './UpcomingEvent/UpcomingEvent';
 
 const Home = () => {
 
@@ -20,6 +21,7 @@ const Home = () => {
         <Banner />
         <OurVision />
         <OurEvents />
+        <UpcomingEvent />
         <Blogs />
         <Footer />
       </div>
