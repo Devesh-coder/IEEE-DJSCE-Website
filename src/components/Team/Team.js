@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../CommonComp/Nav/Nav';
+import Footer from '../CommonComp/Footer/Footer';
 import Profile from './Profile/Profile';
 import styles from "./Team.module.scss";
 import img from "./sample.png";
@@ -55,6 +56,7 @@ function Team() {
           <TeamTileComp />
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
