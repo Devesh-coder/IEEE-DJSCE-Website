@@ -1,6 +1,6 @@
 $bannerHeight: 1100px;
-$topForStat: $bannerHeight/7;
-$topForDescription: $bannerHeight/5;
+$topForStat: $bannerHeight/6;
+$topForDescription: $bannerHeight/4;
 
 .banner{
   position: relative;    
@@ -21,7 +21,7 @@ $topForDescription: $bannerHeight/5;
       text-align: center;
 
       .statElement{
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: 800;
       }
 
