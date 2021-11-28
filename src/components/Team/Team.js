@@ -3,19 +3,32 @@ import Nav from '../CommonComp/Nav/Nav';
 import Footer from '../CommonComp/Footer/Footer';
 import Profile from './Profile/Profile';
 import styles from "./Team.module.scss";
-import img from "./sample.png";
+import img_dev from './Images/CP_Dev.svg'
+import img_cherry from "./Images/CoCp_Cherry.svg"
+import img_ambar from "./sample.png"
+import img_naman from './Images/Sec_Naman.svg'
+import img_keta from './Images/Fin_Keta.svg'
+import img_smeet from './Images/Creatives_Smeet.svg'
+import img_parth from './Images/Soc_Parth.svg'
+import img_krish from './Images/Mark_Krish.svg'
+import img_vatsal from './Images/Mark_Vatsal.svg'
+import img_russel from './Images/Edi_Russel.svg'
+import img_arjav from './Images/Tech_Arjav.svg'
+import img_manan from './Images/Tech_Manan.svg'
+import img_muskan from './Images/Pubs_Muskaan.svg'
+import img_dhairya from './Images/Events_Dhairya.svg'
 
 function Team() {
 
   const people = [
-    [img, 'Dev Manek', 'Chairperson', img, 'Cherry Bhatt', 'Vice-Chairperson'],
-    [img, 'Ambar Mehta', 'Secretary', img, 'Naman Sanghavi', 'Secretary'],
-    [img, 'Keta Suthar', 'Treasurer'],
-    [img, 'Smeet Veera', 'Creatives Head', img, 'Parth Shah', 'Media Head'],
-    [img, 'Krish Shah', 'Marketing Head', img, 'Vatsal Tolia', 'Marketing Head'],
-    [img, 'Russel Lobo', 'Editorial Head'],
-    [img, 'Arjav Parekh', 'Technical Head', img, 'Manan Doshi', 'Technical Head'],
-    [img, 'Muskan Jain', 'Publicity Head', img, 'Dhairya Parikh', 'Events Head'],
+    [img_dev, 'Dev Manek', 'Chairperson', img_cherry, 'Cherry Bhatt', 'Vice-Chairperson'],
+    [img_ambar, 'Ambar Mehta', 'Secretary', img_naman, 'Naman Sanghavi', 'Secretary'],
+    [img_keta, 'Keta Suthar', 'Treasurer'],
+    [img_smeet, 'Smeet Veera', 'Creatives Head', img_parth, 'Parth Shah', 'Media Head'],
+    [img_krish, 'Krish Shah', 'Marketing Head', img_vatsal, 'Vatsal Tolia', 'Marketing Head'],
+    [img_russel, 'Russel Lobo', 'Editorial Head'],
+    [img_arjav, 'Arjav Parekh', 'Technical Head', img_manan, 'Manan Doshi', 'Technical Head'],
+    [img_muskan, 'Muskan Jain', 'Publicity Head', img_dhairya, 'Dhairya Parikh', 'Events Head'],
   ]
 
 
