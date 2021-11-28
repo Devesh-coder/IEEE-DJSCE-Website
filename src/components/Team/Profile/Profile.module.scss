@@ -5,21 +5,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;     
-    gap: .2rem;
+    gap: .5rem;
+
+    .profile__name{
+        font-size: 1.5rem;
+    }
+
+    .profile__title{
+        font-size: .95rem;
+    }
 
     .profile__background{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 10rem;
-        width: 10rem;
+        height: 15rem;
+        width: 15rem;
         background-color: gray;
         border-radius: 15%;
 
         img{
              
-            width: 9rem;
-            height: 9rem;
+            width: 14rem;
+            height: 14rem;
         }
     }
     .profile__name{
