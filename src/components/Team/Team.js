@@ -21,16 +21,15 @@ import img_dhairya from './Images/Events_Dhairya.svg'
 function Team() {
 
   const people = [
-    [img_dev, 'Dev Manek', 'Chairperson', img_cherry, 'Cherry Bhatt', 'Vice-Chairperson'],
-    [img_ambar, 'Ambar Mehta', 'Secretary', img_naman, 'Naman Sanghavi', 'Secretary'],
-    [img_keta, 'Keta Suthar', 'Treasurer'],
-    [img_smeet, 'Smeet Veera', 'Creatives Head', img_parth, 'Parth Shah', 'Media Head'],
-    [img_krish, 'Krish Shah', 'Marketing Head', img_vatsal, 'Vatsal Tolia', 'Marketing Head'],
-    [img_russel, 'Russel Lobo', 'Editorial Head'],
-    [img_arjav, 'Arjav Parekh', 'Technical Head', img_manan, 'Manan Doshi', 'Technical Head'],
-    [img_muskan, 'Muskan Jain', 'Publicity Head', img_dhairya, 'Dhairya Parikh', 'Events Head'],
+    [img_dev, 'Dev Manek', 'Chairperson',[], img_cherry, 'Cherry Bhatt', 'Vice-Chairperson',[]],
+    [img_ambar, 'Ambar Mehta', 'Secretary',[], img_naman, 'Naman Sanghavi', 'Secretary',[]],
+    [img_keta, 'Keta Suthar', 'Treasurer',[]],
+    [img_smeet, 'Smeet Veera', 'Creatives Head',["Khushi Sanghvi","Vrisha Shah", "Hitakshi Shirude"], img_parth, 'Parth Shah', 'Media Head',["Krish Panchal","Nandini Shetty"]],
+    [img_krish, 'Krish Shah', 'Marketing Head',["Divya Suresh","Deep Dholakia"], img_vatsal, 'Vatsal Tolia', 'Marketing Head',["Divya Suresh","Deep Dholakia"]],
+    [img_russel, 'Russel Lobo', 'Editorial Head',["Yash Brahmabhatt","Krisha Lakhani","Sanika Ardekar"]],
+    [img_arjav, 'Arjav Parekh', 'Technical Head',["Devesh Agarwal","Shubh Shah","Prachet Shah","Glen Dhingra"], img_manan, 'Manan Doshi', 'Technical Head',["Devesh Agarwal","Shubh Shah","Prachet Shah","Glen Dhingra"]],
+    [img_muskan, 'Muskan Jain', 'Publicity Head',["Nupur Parmar","Gautam Malpani"], img_dhairya, 'Dhairya Parikh', 'Events Head',["Dev Mehta","Krushang","Ishan Shah"]],
   ]
-
 
   const TeamTileComp = () => {
     const comp = (
@@ -39,15 +38,15 @@ function Team() {
         if ((index + 1) % 3 === 0) {
           return (
             <div className={styles.teams__profile}>
-              <Profile name={people[1]} title={people[2]} img={people[0]} />
+              <Profile img={people[0]} name={people[1]} title={people[2]} jrs={people[3]}  />
             </div>
           )
         }
         else {
           return (
             <div className={styles.teams__profile}>
-              <Profile name={people[1]} title={people[2]} img={people[0]} />
-              <Profile name={people[4]} title={people[5]} img={people[3]} />
+              <Profile img={people[0]} name={people[1]} title={people[2]} jrs={people[3]}  />
+              <Profile img={people[4]} name={people[5]} title={people[6]} jrs={people[7]}  />
             </div>
           )
         }
