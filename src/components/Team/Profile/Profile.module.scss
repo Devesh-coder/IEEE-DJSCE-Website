@@ -33,4 +33,19 @@
     .profile__name{
         font-weight: bold;
     }
+    .profile__tooltip{
+        position:absolute;
+        visibility: hidden;
+        background-color: red;
+        height: fit-content;
+        width: 10rem;
+        margin-left: 28rem;
+        padding: 1.5rem;
+        border-radius: 2rem;
+    }
+}
+.profile:hover{
+    .profile__tooltip{
+        visibility: visible;
+    }
 }
