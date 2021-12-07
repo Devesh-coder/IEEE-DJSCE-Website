@@ -1,0 +1,27 @@
+
+.carouselContainer{
+
+  .carousel{
+    // background-color: pink!important;
+  }
+  
+  .carouselBar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    height: 100px;
+    // position: relative;
+  
+    .mainBar{
+      margin-top: 0px;
+      width: 400px;
+      display: flex;
+      align-items: center;
+  
+      .mainBarSpan{
+        transition: width 0.6s ease;
+      }
+    }
+  }
+}
