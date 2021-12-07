@@ -12,7 +12,7 @@ const CarouselComp = () => {
     const project = baseData.contentForCarousel;
 
     const [currentSlide, setCurrentSlide] = useState(1);
-    const [totalSlides, setTotalSlides] = useState(project.length);
+    const [totalSlides,] = useState(project.length);
     const [progress, setProgress] = useState((1 / totalSlides) * 100);
 
 

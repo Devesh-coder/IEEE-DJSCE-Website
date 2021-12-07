@@ -30,11 +30,9 @@
   }  
 
   button:hover{
-      background: #00F0FF99;
-  }
-
-  buttonClick{
-    background: #00F0FF99;
+      background: linear-gradient(to right, rgb(89, 92, 255), rgb(198, 248, 255));
+      color: #2D1F6A;
+      cursor: pointer;
   }
 
   .Carousel{
