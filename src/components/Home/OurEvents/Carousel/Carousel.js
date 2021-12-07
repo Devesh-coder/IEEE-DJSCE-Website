@@ -91,7 +91,8 @@ const CarouselComp = () => {
                     <span
                         className={styles.mainBarSpan}
                         style={{
-                            background: 'linear-gradient(45deg, blue, red)',
+                            // background: 'linear-gradient(45deg, blue, red)',
+                            background: 'linear-gradient(to right, rgb(89, 92, 255), rgb(198, 248, 255))',
                             width: `${progress}%`,
                             height: '5px',
                         }}
