@@ -1,0 +1,13 @@
+// .carouselContent{
+  .contentgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    .contentImg{
+      .imgFluid{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+// }
