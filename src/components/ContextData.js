@@ -30,6 +30,36 @@ export const DataProvider = (props) => {
         content: 'We attempt too capitalize on the abundant talent and ideas and give others a platform to showcase their perceptions.',
         img: testImg,
       },
+    ],
+
+    content: [
+      {
+        2017: [
+          {
+            title: 'PIXELATED',
+            content: 'We attempt too capitalize on the abundant talent and ideas and give others a platform to showcase their perceptions.',
+            img: testImg,
+          },
+        ]
+      },
+      {
+        2018: [
+          {
+            title: 'PIXELATED',
+            content: 'We attempt too capitalize on the abundant talent and ideas and give others a platform to showcase their perceptions.',
+            img: testImg,
+          },
+        ]
+      },
+      {
+        2019: [
+          {
+            title: 'PIXELATED',
+            content: 'We attempt too capitalize on the abundant talent and ideas and give others a platform to showcase their perceptions.',
+            img: testImg,
+          },
+        ]
+      },
     ]
   };
 
