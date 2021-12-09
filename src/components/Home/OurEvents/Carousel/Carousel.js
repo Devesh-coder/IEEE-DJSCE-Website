@@ -1,15 +1,13 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import styles from "./Carousel.module.scss"
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import CarouselContent from "./CarouselContent/CarouselContent";
-import { Context } from "../../../ContextData";
 
 
-const CarouselComp = () => {
-
-    const [baseData] = useContext(Context);
-    const project = baseData.contentForCarousel;
+const CarouselComp = ({carouselData}) => {
+    
+    const project = carouselData;
 
     const [currentSlide, setCurrentSlide] = useState(1);
     const [totalSlides,] = useState(project.length);
