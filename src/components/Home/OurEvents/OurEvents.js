@@ -19,13 +19,15 @@ const OurEvents = () => {
       <h1 className={styles.eventHeading}>Events</h1>
       <div>
         {
-          eventYears.map((item, key)=>(
-            <button key={key} onClick={()=>setCurrentYear(item)}>{item}</button>    
+          eventYears.map((item, key) => (
+            <button key={key} onClick={() => setCurrentYear(item)}
+              className={(item) === currentYear.toString() ? styles.activeBtn : ""}
+            >{item}</button>
           ))
-        }        
+        }
       </div>
       <div className={styles.Carousel}>
-        <CarouselComp carouselData={carouselContent[currentYear]}/>
+        <CarouselComp carouselData={carouselContent[currentYear]} />
       </div>
     </div>
   )
