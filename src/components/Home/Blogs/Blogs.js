@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Blogs.module.scss';
+import BlogDescription from './BlogDescription/BlogDescription';
 import image1 from "../../../images/BlogPic1.svg";
 import image2 from "../../../images/BlogPic2.svg";
 import image3 from "../../../images/BlogPic3.svg";
-import BlogDescription from './BlogDescription';
 
 function Blogs() {
 
