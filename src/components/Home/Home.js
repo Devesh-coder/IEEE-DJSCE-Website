@@ -17,14 +17,14 @@ const Home = () => {
       <div className={styles.homeNav}>
         <Nav />
       </div>
+      <Banner />
       <div className={styles.flexDiv}>
-        <Banner />
         <OurVision />
         <OurEvents />
         <UpcomingEvent />
         <Blogs />
-        <Footer />
       </div>
+      <Footer />
     </div>
   )
 }
