@@ -1,0 +1,29 @@
+.scrollPop {
+    position: fixed;
+    bottom: 4%;
+    right: 0.5%;
+    border-radius: 20px;
+    color: black;
+    background: linear-gradient(to right, rgb(89, 92, 255), rgb(198, 248, 255));
+    transition: background 0.4s ease;
+    transition: color 0.2s ease;
+    animation: wave 2s infinite ease-in-out;
+
+    &:hover {
+        background: linear-gradient(to right, rgb(89, 92, 255), rgb(198, 248, 255));
+        color: black;
+        // animation: wave 2s infinite ease-in-out; 
+    }
+    
+    & > div {
+    padding: 1em;
+    cursor: pointer;
+    }
+    
+    @keyframes wave {
+        50% {
+            transform: translate(0, -7px);
+        }
+    }
+  }
+  

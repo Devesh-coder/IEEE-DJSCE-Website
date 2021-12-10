@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../CommonComp/Footer/Footer';
 import Nav from '../CommonComp/Nav/Nav'
+import Scrollpop from '../CommonComp/ScrollPop/ScrollPop';
 import Banner from './Banner/Banner';
 import Blogs from './Blogs/Blogs';
 import styles from "./Home.module.scss"
@@ -24,6 +25,7 @@ const Home = () => {
         <UpcomingEvent />
         <Blogs />
       </div>
+      <Scrollpop />
       <Footer />
     </div>
   )
