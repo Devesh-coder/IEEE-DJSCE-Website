@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import cx from "classnames"
 import styles from "./Nav.module.scss"
 import { Context } from '../../ContextData'
@@ -13,6 +13,10 @@ const Nav = () => {
   const IEEELogoImg = baseData.navLogo;
 
   const [isScrolled, handleIsScrolled] = useState(false);
+
+  const loc = useLocation()
+  const matchParam = loc.pathname.substring(1, loc.pathname.length);
+
   const transitionNavBar = () => {
     if (window.scrollY > 70) {
       handleIsScrolled(true);
@@ -49,7 +53,8 @@ const Nav = () => {
         <div className={cx(styles.secondNav)}>
           {
             navElements.map((element, key) => (
-              <Link to={`/${element.linkTo}`} key={key} className={element.className}>
+              <Link to={`/${element.linkTo}`} key={key} 
+                className={cx(element.className, element.linkTo === matchParam?styles.activeLink:"")}>
                 {element.title}
               </Link>
             ))
