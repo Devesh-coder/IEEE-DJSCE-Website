@@ -2,6 +2,7 @@ import React from 'react'
 import cx from "classnames"
 import Nav from '../CommonComp/Nav/Nav'
 import Footer from '../CommonComp/Footer/Footer'
+import ScrollTop from '../CommonComp/ScrollTop/ScrollTop'
 import styles from "./AboutUs.module.scss";
 import aimImg from "../../images/gitup.jpg";
 
@@ -23,7 +24,7 @@ const AboutUs = () => {
 
         <div className={styles.aim}>
           <div className={cx(styles.content, styles.secondaryContent)}>
-          <h1 className={cx(styles.heading, styles.secondaryHeading)}>Our Aim</h1>
+            <h1 className={cx(styles.heading, styles.secondaryHeading)}>Our Aim</h1>
             Our AIM is to spread awareness regarding upcoming field of technology and keep interest groups to work together and take part in various competitions.
             We believe in leveraging technology for a better tomorrow.
           </div>
@@ -33,6 +34,7 @@ const AboutUs = () => {
         </div>
 
       </div>
+      <ScrollTop />
       <Footer />
     </div>
   )
