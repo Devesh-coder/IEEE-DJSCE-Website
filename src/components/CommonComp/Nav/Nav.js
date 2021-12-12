@@ -13,7 +13,6 @@ const Nav = () => {
   const IEEELogoImg = baseData.navLogo;
 
   const [isScrolled, handleIsScrolled] = useState(false);
-  const [isParamEvents, setIsParamEvents] = useState(false);
 
   const loc = useLocation()
   const matchParam = loc.pathname.substring(1, loc.pathname.length);
@@ -55,7 +54,6 @@ const Nav = () => {
           {
             navElements.map((element, key) => (
               <Link to={`/${element.linkTo}`} key={key}
-                onClick={() => setIsParamEvents(element.linkTo === "events" ? true : false)}
                 className={cx(element.className, cx(
                   element.linkTo === matchParam && element.linkTo !== "events" ? styles.activeLink : ""))
                 }>
