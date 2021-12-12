@@ -1,4 +1,5 @@
 import React from 'react'
+import FloatingLink from '../CommonComp/FloatingLink/FloatingLink';
 import Footer from '../CommonComp/Footer/Footer';
 import Nav from '../CommonComp/Nav/Nav'
 import Scrollpop from '../CommonComp/ScrollPop/ScrollPop';
@@ -27,6 +28,7 @@ const Home = () => {
         <Blogs />
       </div>
       <ScrollTop />
+      <FloatingLink/>
       <Scrollpop />
       <Footer />
     </div>
