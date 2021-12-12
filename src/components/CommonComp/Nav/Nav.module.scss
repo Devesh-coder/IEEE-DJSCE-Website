@@ -1,9 +1,8 @@
+.nav_dark {
+  background-color: #2d1f6a;
+}
 
-  .nav_dark {
-    background-color: #2D1F6A;
-  }
-
-.navDiv{
+.navDiv {
   position: sticky;
   top: 0;
   width: 100%;
@@ -11,53 +10,90 @@
   transition-timing-function: ease-in;
   transition: all 0.5s;
 
-
-  .nav{
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px; 
+    padding: 10px 30px;
     padding-top: 30px;
     z-index: 100;
     font-family: Roboto;
     font-weight: 400;
     letter-spacing: 0.3rem;
-  
-    .secondNav{
+
+    .secondNav {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 3rem;
-      
-      .navElement{
+
+      .navElement {
         text-decoration: none;
         color: white;
         text-transform: uppercase;
         padding: 6px 0;
+
+        &:after {
+          bottom: 0;
+          content: '';
+          display: block;
+          height: 2px;
+          background: #fff;
+          transition: width 0.3s ease-out;
+          width: 0;
+        }
+
+        &:hover:after {
+          width: 96%;
+        }
       }
 
-      .navElement:after{
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        background: #fff;
-        transition: width 0.3s ease-out;
-        width: 0;
-      }
-
-      .navElement:hover:after{
-        width: 100%; 
-      }
-
-      .navEvents{
+      .navEvents {
         border: 2px solid white;
-        padding: 10px;
+        padding: 12px;
         border-radius: 30px;
-      }      
+        border-color: linear-gradient(
+          to right,
+          rgb(89, 92, 255),
+          rgb(198, 248, 255)
+        );
 
-      .activeLink{
-        font-weight: 800;        
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        transition: color 0.2s ease;
+
+        &:hover {
+          background: linear-gradient(
+            to right,
+            rgb(89, 92, 255),
+            rgb(198, 248, 255)
+          );
+          border: none;
+          font-weight: 800;
+          padding: 13.5px;
+        }
+      }
+      .activeEvent {
+        padding: 13.5px;
+        background: linear-gradient(
+          to right,
+          rgb(89, 92, 255),
+          rgb(198, 248, 255)
+        );
+        border: none;
+        font-weight: 800;
+      }
+
+      .activeLink {
+        font-weight: 800;
+      }
+      .activeLink::after {
+        content: '';
+        display: block;
+        background: white;
+        width: 95%;
+        height: 4px;
       }
     }
   }
