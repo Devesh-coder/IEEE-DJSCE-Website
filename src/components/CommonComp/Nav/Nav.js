@@ -13,6 +13,7 @@ const Nav = () => {
   const IEEELogoImg = baseData.navLogo;
 
   const [isScrolled, handleIsScrolled] = useState(false);
+  const [isParamEvents, setIsParamEvents] = useState(false);
 
   const loc = useLocation()
   const matchParam = loc.pathname.substring(1, loc.pathname.length);
@@ -34,7 +35,7 @@ const Nav = () => {
     { title: "About Us", linkTo: "aboutUs", className: cx(styles.navElement) },
     { title: "Sponsors", linkTo: "sponsors", className: cx(styles.navElement) },
     { title: "Our Team", linkTo: "teams", className: cx(styles.navElement) },
-    { title: "Events", linkTo: "events", className: cx(styles.navElement, styles.navEvents) },
+    { title: "Events", linkTo: "events", className: cx(styles.navEvents, matchParam === "events" ? styles.activeEvent : "") },
   ]
 
   return (
@@ -53,15 +54,18 @@ const Nav = () => {
         <div className={cx(styles.secondNav)}>
           {
             navElements.map((element, key) => (
-              <Link to={`/${element.linkTo}`} key={key} 
-                className={cx(element.className, element.linkTo === matchParam?styles.activeLink:"")}>
+              <Link to={`/${element.linkTo}`} key={key}
+                onClick={() => setIsParamEvents(element.linkTo === "events" ? true : false)}
+                className={cx(element.className, cx(
+                  element.linkTo === matchParam && element.linkTo !== "events" ? styles.activeLink : ""))
+                }>
                 {element.title}
               </Link>
             ))
           }
         </div>
-      </nav>
-    </div>
+      </nav >
+    </div >
   )
 }
 
